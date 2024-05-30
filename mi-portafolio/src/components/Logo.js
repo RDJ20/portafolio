@@ -10,8 +10,8 @@ const Logo = () => {
 }
 
 const LogoContainer = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   background-color: white;
   color: black;
   display: flex;
@@ -21,6 +21,20 @@ const LogoContainer = styled.div`
   font-size: 220%;
   font-weight: bold;
   font-family: 'Koulen', sans-serif; 
+
+  @media (max-width: 1440px) {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 200%;
+  }
+  
+  @media (max-width: 1024px) {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 190%;
+  }
 `;
 
 export default Logo;

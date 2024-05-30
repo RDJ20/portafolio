@@ -30,8 +30,13 @@ const HeaderContainer = styled.header`
   top: 0;
   
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1440px) {
     padding: 2%;
+    height: 3%; 
+  }
+  
+  @media (max-width: 1024px) {
+    padding: 1.5%;
     height: 3%; 
   }
 `;
@@ -43,7 +48,20 @@ const Nav = styled.nav`
 const NavList = styled.ul`
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 100px;
+  margin-right: 70px;
+  font-size: 170%;
+  font-family: 'Inconsolata', monospace; 
+
+  @media (max-width: 1440px) {
+    gap: 45px;
+    font-size: 170%;
+  }
+  @media (max-width: 1024px) {
+    gap: 45px;
+    font-size: 130%;
+  }
+
 `;
 
 const NavItem = styled.li``;
