@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Logo from './Logo';
 const Header = () => {
     return (
         <HeaderContainer>
-      <Logo>R</Logo>
+      <Logo />
       <Nav>
         <NavList>
           <NavItem><NavLink href="#inicio">Inicio</NavLink></NavItem>
@@ -34,11 +34,6 @@ const HeaderContainer = styled.header`
     padding: 2%;
     height: 3%; 
   }
-`;
-  
-const Logo = styled.div`
-  font-size: 24px;
-  font-weight: bold;
 `;
 
 const Nav = styled.nav`
