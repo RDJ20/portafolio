@@ -63,8 +63,14 @@ const Content = styled.div`
   font-family: 'Inconsolata', monospace; 
   font-weight: 400; 
   padding-top: 8vh;
-  margin-right: 200px; 
+  margin-right: 25vh; 
   will-change: transform;
+
+  @media (max-width: 1440px) and (max-height: 900px) {
+    margin-right: 2vh;
+  }
+
+
 `;
 
 const StyledH1 = styled.h1`
