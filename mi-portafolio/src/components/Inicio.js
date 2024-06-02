@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 import GitHubButton from './Buttons/Github'
 import LinkedinButton from './Buttons/Linkedin';
 import CVButton from './Buttons/CV';
+import Parallax from '../hooks/Parallax';
+import useScrollEffect from '../hooks/useScrollEffect';
 
 const Inicio = () => {
+  const contentRef = useRef(null);
+  const kanjiRef = useRef(null);
+  Parallax(contentRef, -1);
+  useScrollEffect(kanjiRef);
+
   return (
     <InicioContainer id="inicio">
-      <KanjiBackground>決意力</KanjiBackground>
-      <Content>
+      <KanjiBackground ref={kanjiRef}>決意力</KanjiBackground>
+      <Content ref={contentRef}>
         <StyledH1>Hola,</StyledH1>
         <StyledH1>soy Rafael Sandoval,</StyledH1>
         <StyledH1>un <Highlight>programador</Highlight>.</StyledH1>
@@ -57,6 +64,7 @@ const Content = styled.div`
   font-weight: 400; 
   padding-top: 8vh;
   margin-right: 200px; 
+  will-change: transform;
 `;
 
 const StyledH1 = styled.h1`

@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import GlobalStyle from './globalStyles';
 import FixedLabel from './components/FixedLabel';
 
+
 function App() {
   const [currentSection, setCurrentSection] = useState('inicio');
 
@@ -31,6 +32,7 @@ function App() {
   }, []);
 
   
+
   return (
     <div className="App">
       <GlobalStyle/>
