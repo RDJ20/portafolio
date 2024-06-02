@@ -52,7 +52,7 @@ const Content = styled.div`
   position: relative;
   z-index: 1;
   text-align: left;
-  font-size: 5vh;
+  font-size: 6vh;
   font-family: 'Inconsolata', monospace; 
   font-weight: 400; 
   padding-top: 8vh;
