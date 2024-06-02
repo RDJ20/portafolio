@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const useScrollEffect = (ref, maxBlur = 100) => { // Añadir un parámetro para el máximo desenfoque
+const useScrollEffect = (ref, maxBlur = 100) => { 
   useEffect(() => {
     const handleScroll = () => {
       if (ref.current) {
