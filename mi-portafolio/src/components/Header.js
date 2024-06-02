@@ -28,6 +28,7 @@ const HeaderContainer = styled.header`
   height: 3%; 
   position: fixed;
   top: 0;
+  z-index: 1000;
   
 
   @media (max-width: 1440px) {
