@@ -39,7 +39,7 @@ const InicioContainer = styled.div`
 const KanjiBackground = styled.div`
   position: absolute;
   font-size: 61vh; 
-  color: rgba(255, 255, 255, 0.05); 
+  color: #1C1D20; 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -64,7 +64,9 @@ const StyledH1 = styled.h1`
 `;
 
 const Highlight = styled.span`
-  color: #ff007f;
+  background: linear-gradient(45deg, #ff007f, #F7835F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `;
 
 const ButtonWrapper = styled.div`
