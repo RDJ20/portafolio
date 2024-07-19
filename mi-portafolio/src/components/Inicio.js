@@ -53,6 +53,22 @@ const KanjiBackground = styled.div`
   white-space: nowrap; /* Para que las palabras se dividan en varias líneas o algo asi*/
   font-weight: bold;
   z-index: 0;
+
+
+  @media (max-width: 1024px) {
+    font-size:  30vh;
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+  }
+
+  @media (max-width: 768px) {
+    font-size: 20vh;
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 20vh;
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+  }
 `;
 
 const Content = styled.div`
@@ -66,8 +82,22 @@ const Content = styled.div`
   margin-right: 25vh; 
   will-change: transform;
 
-  @media (max-width: 1440px) and (max-height: 900px) {
+  @media (max-width: 1440px) {
     margin-right: 2vh;
+    font-size: 6vh;
+  }
+
+  @media (max-width: 1024px) {
+    margin-right: 2vh;
+    font-size: 6vh;
+  }
+
+  @media (max-width: 482px) {
+    margin-top: 10vh;
+    margin-left: 3vh;
+    white-space: nowrap;
+    font-size: 3vh;
+    
   }
 
 
@@ -84,6 +114,7 @@ const Highlight = styled.span`
 `;
 
 const ButtonWrapper = styled.div`
+  
   margin-top: 1vh; 
   display: flex; 
   gap: 4vh; 

@@ -49,19 +49,26 @@ const Nav = styled.nav`
 const NavList = styled.ul`
   list-style: none;
   display: flex;
-  gap: 100px;
-  margin-right: 70px;
-  font-size: 170%;
+  gap: 7vh;
+  margin-right: 7vh;
+  font-size: 2.2vh;
   font-family: 'Inconsolata', monospace; 
 
   @media (max-width: 1440px) {
-    gap: 45px;
+    gap: 5vh;
     font-size: 170%;
   }
   @media (max-width: 1024px) {
-    gap: 45px;
-    font-size: 130%;
+    gap: 2vh;
+    font-size: 70%;
   }
+  @media (max-width: 482px) {
+    gap: 1vh;
+    margin-right: 4vh;
+    font-size: 80%;
+    
+  }
+ 
 
 `;
 
