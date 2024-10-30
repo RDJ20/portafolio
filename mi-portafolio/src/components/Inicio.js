@@ -118,7 +118,7 @@ const Content = styled.div`
     align-items: center; /* Centrado horizontal */
     
     white-space: nowrap;
-    font-size: 3.4vh;
+    font-size: 3.3vh;
     
   }
 

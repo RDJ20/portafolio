@@ -98,7 +98,7 @@ const BurgerMenu = styled.div`
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
-  margin-right: 2rem;
+  margin-right: 2.7rem;
   span {
     width: 25px;
     height: 3px;
