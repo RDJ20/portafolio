@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// Aqui majea solo el logo de la pagina, el que esta en la esquina superior izquierda
 const Logo = () => {
   return (
     <LogoContainer>

@@ -29,6 +29,8 @@ const Inicio = () => {
   );
 }
 
+
+// Contenedor de todas las cosas del inicio
 const InicioContainer = styled.div`
   background-color: #17181B; 
   color: white;
@@ -43,6 +45,7 @@ const InicioContainer = styled.div`
   }
 `;
 
+// Letras japonesas del fondo
 const KanjiBackground = styled.div`
   position: absolute;
   font-size: 61vh; 
@@ -57,17 +60,32 @@ const KanjiBackground = styled.div`
 
   @media (max-width: 1024px) {
     font-size:  30vh;
-    white-space: normal; /* Permite que el texto se divida en varias líneas */
+    white-space: normal; /* Hace que el texto se divida en varias líneas */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    text-align: center; /* Alineación del texto dentro del contenedor */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
   }
 
   @media (max-width: 768px) {
     font-size: 20vh;
-    white-space: normal; /* Permite que el texto se divida en varias líneas */
+    white-space: normal; /* Hace que el texto se divida en varias líneas */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    text-align: center; /* Alineación del texto dentro del contenedor */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
   }
 
   @media (max-width: 480px) {
     font-size: 20vh;
     white-space: normal; /* Permite que el texto se divida en varias líneas */
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    justify-content: center; /* Centrado horizontal */
+    text-align: center; /* Alineación del texto dentro del contenedor */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
   }
 `;
 
@@ -95,8 +113,12 @@ const Content = styled.div`
   @media (max-width: 482px) {
     margin-top: 10vh;
     margin-left: 3vh;
+    display: flex; /* Añadido para centrar */
+    flex-direction: column; /* Mantiene los elementos en columna */
+    align-items: center; /* Centrado horizontal */
+    
     white-space: nowrap;
-    font-size: 3vh;
+    font-size: 3.4vh;
     
   }
 
@@ -105,6 +127,10 @@ const Content = styled.div`
 
 const StyledH1 = styled.h1`
   font-weight: 400; /* Especificar peso de fuente para los h1 */
+
+  @media (max-width: 482px) {
+   
+  }
 `;
 
 const Highlight = styled.span`
