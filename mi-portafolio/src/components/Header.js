@@ -21,7 +21,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 3vh;
   width: 100%;
   background-color: #36393F;
   color: white;
@@ -30,16 +30,6 @@ const HeaderContainer = styled.header`
   top: 0;
   z-index: 1000;
   
-
-  @media (max-width: 1440px) {
-    padding: 2%;
-    height: 3%; 
-  }
-  
-  @media (max-width: 1024px) {
-    padding: 1.5%;
-    height: 3%; 
-  }
 `;
 
 const Nav = styled.nav`
@@ -51,7 +41,7 @@ const NavList = styled.ul`
   display: flex;
   gap: 7vh;
   margin-right: 7vh;
-  font-size: 2.2vh;
+  font-size: 190%;
   font-family: 'Inconsolata', monospace; 
 
   @media (max-width: 1440px) {
@@ -60,7 +50,7 @@ const NavList = styled.ul`
   }
   @media (max-width: 1024px) {
     gap: 2vh;
-    font-size: 70%;
+    font-size: 120%;
   }
   @media (max-width: 482px) {
     gap: 1vh;
@@ -68,6 +58,7 @@ const NavList = styled.ul`
     font-size: 80%;
     
   }
+  
  
 
 `;
@@ -83,3 +74,24 @@ const NavLink = styled.a`
 `;
 
 export default Header;
+
+
+
+
+/* header
+@media (max-width: 1440px) {
+    padding: 2%;
+    height: 3%; 
+  }
+  
+  @media (max-width: 1024px) {
+    padding: 1.5%;
+    height: 3%; 
+  }
+*/
+
+
+/* navlist
+
+
+*/

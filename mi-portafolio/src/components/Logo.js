@@ -22,6 +22,14 @@ const LogoContainer = styled.div`
   font-weight: bold;
   font-family: 'Koulen', sans-serif; 
 
+`;
+
+export default Logo;
+
+
+
+/*
+
   @media (max-width: 1440px) {
     width: 40px;
     height: 40px;
@@ -35,6 +43,4 @@ const LogoContainer = styled.div`
     border-radius: 9px;
     font-size: 190%;
   }
-`;
-
-export default Logo;
+    */
