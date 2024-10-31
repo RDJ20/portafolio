@@ -15,10 +15,10 @@ const Header = () => {
           <span />
         </BurgerMenu>
         <NavList isOpen={isOpen}>
-          <NavItem><NavLink href="#inicio">Inicio</NavLink></NavItem>
-          <NavItem><NavLink href="#proyectos">Proyectos</NavLink></NavItem>
-          <NavItem><NavLink href="#sobre-mi">Sobre mí</NavLink></NavItem>
-          <NavItem><NavLink href="#contacto">Contactame</NavLink></NavItem>
+          <NavLink href="#inicio">Inicio</NavLink>
+          <NavLink href="#proyectos">Proyectos</NavLink>
+          <NavLink href="#sobre-mi">Sobre mí</NavLink>
+          <NavLink href="#contacto">Contactame</NavLink>
         </NavList>
       </Nav>
     </HeaderContainer>
@@ -82,7 +82,7 @@ const NavList = styled.ul`
 
 `;
 
-const NavItem = styled.li``;
+
 
 const NavLink = styled.a`
   color: white;
@@ -93,8 +93,10 @@ const NavLink = styled.a`
 `;
 
 
+// Para el menu de Hamburguesa que se crea cuando el tamaño de la pantalla es muy reducido
+
 const BurgerMenu = styled.div`
-  display: none;
+  display: none;   /*Aqui hace que no se mire */
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
