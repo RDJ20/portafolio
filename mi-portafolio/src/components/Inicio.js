@@ -95,53 +95,50 @@ const Content = styled.div`
   position: relative;
   z-index: 1;
   text-align: left;
-  font-size: 6vh;
+  font-size: 4rem;
   font-family: 'Inconsolata', monospace; 
   font-weight: 400; 
-  padding-top: 8vh;
-  margin-right: 25vh; 
+  padding-top: 7.5rem;
+  margin-right: 35rem; 
   will-change: transform;
 
+
   @media (max-width: 1440px) {
-    margin-right: 2vh;
-    font-size: 6vh;
+    margin-right: 1.3rem;
+    font-size: 3rem;
   }
 
   @media (max-width: 1024px) {
-    margin-right: 2vh;
-    font-size: 6vh;
+    margin-right: 1.6rem;
+    font-size: 2.5rem;
   }
-@media (max-width: 750px) {
-    margin-top: 10vh;
-    margin-left: 3vh;
+@media (max-width: 768px) {
+    margin-top: 3rem;
+    margin-left: 2.6rem;
   
     
     white-space: nowrap;
-    font-size: 5.3vh;
+    font-size: 2.2rem;
     
   }
 @media (max-width: 600px) {
-    margin-top: 10vh;
-    margin-left: 3vh;
+    margin-top: 3.5rem;
   
-    
     white-space: nowrap;
-    font-size: 4.3vh;
+    font-size: 2.2rem;
     
   }
 
   @media (max-width: 482px) {
-    margin-top: 10vh;
-    margin-left: 3vh;
+    margin-top: 4rem;
     display: flex; /* Añadido para centrar */
     flex-direction: column; /* Mantiene los elementos en columna */
     align-items: center; /* Centrado horizontal */
     
     white-space: nowrap;
-    font-size: 3.3vh;
+    font-size: 1.2rem;
     
   }
-
 
 `;
 
