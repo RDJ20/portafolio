@@ -89,6 +89,8 @@ const KanjiBackground = styled.div`
   }
 `;
 
+
+// Letras e iconos, todo en el mismo contenedor 
 const Content = styled.div`
   position: relative;
   z-index: 1;
@@ -108,6 +110,24 @@ const Content = styled.div`
   @media (max-width: 1024px) {
     margin-right: 2vh;
     font-size: 6vh;
+  }
+@media (max-width: 750px) {
+    margin-top: 10vh;
+    margin-left: 3vh;
+  
+    
+    white-space: nowrap;
+    font-size: 5.3vh;
+    
+  }
+@media (max-width: 600px) {
+    margin-top: 10vh;
+    margin-left: 3vh;
+  
+    
+    white-space: nowrap;
+    font-size: 4.3vh;
+    
   }
 
   @media (max-width: 482px) {
