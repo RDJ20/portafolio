@@ -95,16 +95,28 @@ const Content = styled.div`
   position: relative;
   z-index: 1;
   text-align: left;
-  font-size: 4rem;
+  font-size: 8rem;
   font-family: 'Inconsolata', monospace; 
   font-weight: 400; 
-  padding-top: 7.5rem;
-  margin-right: 35rem; 
+  padding-top: 6.5rem;
+  margin-right: 60rem; 
   will-change: transform;
 
 
+@media (max-width: 2560px) {
+  margin-right: 35rem; 
+  padding-top: 4.5rem;
+  font-size: 4.9rem;
+} 
+
+ @media (max-width: 1920px) {
+    margin-right: 19.3rem;
+    padding-top: 4rem;
+    font-size: 4rem;
+  }
+
   @media (max-width: 1440px) {
-    margin-right: 1.3rem;
+    margin-right: 4.3rem;
     font-size: 3rem;
   }
 
